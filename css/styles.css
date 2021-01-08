@@ -1,16 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Ubuntu&display=swap');
 
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+background-color: #C14975;
 
-.header {
-    padding: 60px;
+}
+
+.mainHeader { 
+    padding:50px;
     text-align: center;
     background: #1abc9c;
     color: white;
     font-size: 7rem;
     font-weight: bold;
     width: 100%;
+    font-family: 'Permanent Marker', cursive;
+
   }
 
 .choice:hover{
     background-color: aquamarine;
     border-radius: 50%;
+}
+
+.scoreBoard{
+  margin: 20px auto;
+  border: 7px solid #61C9A8;
+  border-radius: 50px;
+  width: 200px;
+  padding: 15px, 20px;
+  color: white;
+  font-size: 75px;
+  text-align: center;
+  text-emphasis: none;
+  
+}
+
+.displayResults{
+  text-align: center;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 7rem;
+  color: white;
+}
+
+.badge{
+  border-radius: 15rem;
+  border: #A997DF;
+  background-color: #A997DF;
+  color: white;
+  font-size: 5rem;
+  padding: 2px 10px;
+
+}
+
+#user-label{
+  padding: 20px;
+  margin: 25px;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+
+#computer-label{
+  padding: 20px;
+  margin: 25px;
+  font-family: 'Ubuntu', sans-serif;
 }

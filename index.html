@@ -24,20 +24,46 @@
 
     <!-- header area -->
 
-    <header class="header">Rock, Paper, Scissor, Lizard, Spock</header>
+    <header class="mainHeader">Rock, Paper, Scissor, Lizard, Spock</header>
 
-    <!-- scoreBoard area -->
+    <!-- score board area -->
+
+    <div class="container-fluid ">
+        <div class="row">
+            <div class="col-2"></div>
+            
+            <div class="col-2">
+                <div id="user-label" class="badge">User</div>
+            </div>
+            <div class="col-4">
+                <div class="scoreBoard">
+                    <span id="userScore">0</span> : <span id="computerScore">0</span>
+                </div>
+            </div>
+                <div class="col-2">
+                    <div id="computer-label" class="badge">Comp</div>
+                </div>
+                
+                <div class="col-2"></div>
+    
+            </div>
+    </div>
+
+<!-- Text winner area -->
 
 
-
-
-
-
-
-
+<div class="container-fluid">
+    <div class="row">
+        <div class="col">
+            <div class="displayResults" id="winnerResults">Paper covers Rock! </div>
+        </div>
+    </div>
+    
+    
+    
+    
     <!-- Clickable Choices -->
-    <div class="container-fluid">
-        <div class="row mt-5">
+        <div class="row mt-3">
             <div class="col-1"></div>
 
             <div class="col-2">
