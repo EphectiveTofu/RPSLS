@@ -1,15 +1,17 @@
 // playerChoices = ["Rock" , "Paper", "Scissor", "Lizard", "Spock"]
 // console.log(choices[0])
-// let userAns = "Rock";
+
 let cpuAns;
 
 
-
-
+// ScoreBoad elements
 let winCount = 0;
 let loseCount = 0;
 let tieCount = 0;
 
+// display elements 
+
+let winnerResults = document.getElementById("winnerResults");
 
 
 
@@ -39,7 +41,7 @@ btnRock.addEventListener('click', function () {
     compare("Rock")
     getCPU()
     //console.log(cpuAns)
-    
+    let pElement = document.createElement("p");
 })
 
 btnPaper.addEventListener('click', function () {
