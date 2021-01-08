@@ -15,8 +15,7 @@ background-color: #C14975;
     text-align: center;
     background: #1abc9c;
     color: white;
-    font-size: 7rem;
-    font-weight: bold;
+    font-size: 6rem;
     width: 100%;
     font-family: 'Permanent Marker', cursive;
 
@@ -31,19 +30,20 @@ background-color: #C14975;
   margin: 20px auto;
   border: 7px solid #61C9A8;
   border-radius: 50px;
-  width: 200px;
+  width: 250px;
   padding: 15px, 20px;
   color: white;
   font-size: 75px;
   text-align: center;
-  text-emphasis: none;
+  font-weight: bolder;
+  
   
 }
 
 .displayResults{
   text-align: center;
   font-family: 'Permanent Marker', cursive;
-  font-size: 7rem;
+  font-size: 5rem;
   color: white;
 }
 
