@@ -44,6 +44,13 @@ async function getCPU() {
 
 getCPU()
 
+
+function dosPlayerMode(){
+
+}
+
+
+
 btnRock.addEventListener('click', function () {
     compare("Rock")
     getCPU()
@@ -75,7 +82,11 @@ btnSpock.addEventListener('click', function () {
     //console.log("Spock")
 })
 
-function winRound(){}
+function winRound()
+{
+
+}
+
 
 
 
