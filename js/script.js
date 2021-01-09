@@ -5,8 +5,15 @@ let cpuAns;
 
 
 // ScoreBoad elements
+
+
 let winCount = 0;
 let loseCount = 0;
+
+let userScore = document.getElementById("userScore");
+let computerScore = document.getElementById("computerScore");
+let scoreBoard = document.querySelector(".scoreBoard")
+
 let tieCount = 0;
 
 // display elements 
@@ -67,6 +74,9 @@ btnSpock.addEventListener('click', function () {
     getCPU()
     //console.log("Spock")
 })
+
+function winRound(){}
+
 
 
 function compare(userAns) {
