@@ -51,6 +51,20 @@ function dosPlayerMode(){
 
 
 
+function unoRoundMode() {
+
+}
+
+function tresRoundMode(){
+
+}
+
+function sieteRoundMode(){
+
+}
+
+
+
 btnRock.addEventListener('click', function () {
     compare("Rock")
     getCPU()
@@ -95,7 +109,7 @@ function loseRound (){
 }
 
 
-
+//This is the main compare function to put player vs to cpu answers
 
 function compare(userAns) {
     console.log(userAns)
