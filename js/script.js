@@ -1,6 +1,6 @@
 // playerChoices = ["Rock" , "Paper", "Scissor", "Lizard", "Spock"]
 // console.log(choices[0])
-
+let userAns;
 let cpuAns;
 
 
@@ -11,7 +11,7 @@ let winCount = 0;
 let loseCount = 0;
 
 let userScore = document.getElementById("userScore");
-let computerScore = document.getElementById("computerScore");
+let CPUScore = document.getElementById("CPUScore");
 let scoreBoard = document.querySelector(".scoreBoard")
 
 let tieCount = 0;
@@ -54,8 +54,10 @@ function dosPlayerMode(){
 btnRock.addEventListener('click', function () {
     compare("Rock")
     getCPU()
+    winRound()
+    
     //console.log(cpuAns)
-    let pElement = document.createElement("p");
+    
 })
 
 btnPaper.addEventListener('click', function () {
@@ -82,8 +84,13 @@ btnSpock.addEventListener('click', function () {
     //console.log("Spock")
 })
 
-function winRound()
+function winRound(userAns, cpuAns)
 {
+winCount++;
+
+}
+
+function loseRound (){
 
 }
 
@@ -94,54 +101,60 @@ function compare(userAns) {
     console.log(userAns)
     console.log(cpuAns)
     if (cpuAns == userAns) {
-        console.log("Tie! The same thing cannot beat itself you silly goose!")
+        //console.log("Tie! The same thing cannot beat itself you silly goose!")
         tieCount++;
+        document.getElementById("winnerResults").innerText = "Tie! The same thing cannot beat itself you silly goose!";
     } else if (userAns == "Rock") {
         if (cpuAns == "Paper" || cpuAns == "Spock") {
             loseCount++;
-            console.log(`You Lose because you chose ${userAns} and the computer chose ${cpuAns}`)
+            //console.log(`You Lose because you chose ${userAns} and the CPU chose ${cpuAns}`)
+            document.getElementById("winnerResults").innerText = (`You Lose because you chose ${userAns} and the CPU chose ${cpuAns}`);
             
         } else if (cpuAns == "Scissors" || cpuAns == "Lizard") {
             winCount++;
-            console.log(`You win because you chose ${userAns} and the computer chose ${cpuAns}`)
-
+            //console.log(`You win because you chose ${userAns} and the CPU chose ${cpuAns}`)
+            document.getElementById("winnerResults").innerText = (`You win because you chose ${userAns} and the CPU chose ${cpuAns}`);
         }
     } else if (userAns == "Paper") {
         if (cpuAns == "Scissors" || "Lizard") {
             loseCount++;
-            console.log(`You Lose because you chose ${userAns} and the computer chose ${cpuAns}`)
-
+            //console.log(`You Lose because you chose ${userAns} and the CPU chose ${cpuAns}`)
+            document.getElementById("winnerResults").innerText = (`You Lose because you chose ${userAns} and the CPU chose ${cpuAns}`);
         } else if (cpuAns == "Rock" || "Spock") {
             wintCount++;
-            console.log(`You win because you chose ${userAns} and the computer chose ${cpuAns}`)
+            //console.log(`You win because you chose ${userAns} and the CPU chose ${cpuAns}`)
+            document.getElementById("winnerResults").innerText = (`You win because you chose ${userAns} and the CPU chose ${cpuAns}`);
         }
     } else if (userAns == "Scissors") {
         if (cpuAns == "Spock" || "Rock") {
             loseCount++;
-            console.log(`You Lose because you chose ${userAns} and the computer chose ${cpuAns}`)
-
+            //console.log(`You Lose because you chose ${userAns} and the CPU chose ${cpuAns}`)
+            document.getElementById("winnerResults").innerText = (`You Lose because you chose ${userAns} and the CPU chose ${cpuAns}`);
         } else if (cpuAns == "Scissors" || "Paper") {
             winCount++;
-            console.log(`You win because you chose ${userAns} and the computer chose ${cpuAns}`)
+            //console.log(`You win because you chose ${userAns} and the CPU chose ${cpuAns}`)
+            document.getElementById("winnerResults").innerText = (`You win because you chose ${userAns} and the CPU chose ${cpuAns}`);
         }
     }
     else if (userAns == "Lizard") {
         if (cpuAns == "Rock" || "Scissors") {
             loseCount++;
-            console.log(`You Lose because you chose ${userAns} and the computer chose ${cpuAns}`)
-
+            //console.log(`You Lose because you chose ${userAns} and the CPU chose ${cpuAns}`)
+            document.getElementById("winnerResults").innerText = (`You Lose because you chose ${userAns} and the CPU chose ${cpuAns}`);
         } else if (cpuAns == "Paper" || "Spock") {
             winCount++;
-            console.log(`You win because you chose ${userAns} and the computer chose ${cpuAns}`)
+            //console.log(`You win because you chose ${userAns} and the CPU chose ${cpuAns}`)
+            document.getElementById("winnerResults").innerText = (`You win because you chose ${userAns} and the CPU chose ${cpuAns}`);
         }
     } else if (userAns == "Spock") {
         if (cpuAns == "Paper" || "Lizard") {
             loseCount++;
-            console.log(`You Lose because you chose ${userAns} and the computer chose ${cpuAns}`)
-
+            ///console.log(`You Lose because you chose ${userAns} and the CPU chose ${cpuAns}`)
+            document.getElementById("winnerResults").innerText = (`You Lose because you chose ${userAns} and the CPU chose ${cpuAns}`)
         } else if (cpuAns == "Rock" || "Scissors") {
             winCount++;
-            console.log(`You win because you chose ${userAns} and the computer chose ${cpuAns}`)
+            //console.log(`You win because you chose ${userAns} and the CPU chose ${cpuAns}`)
+            document.getElementById("winnerResults").innerText = (`You win because you chose ${userAns} and the CPU chose ${cpuAns}`);
         }
     } else {
         console.log("We have an issue");
